@@ -1,14 +1,15 @@
 {
   "name": "todo",
   "version": "1.0.0",
+  "description": "Aplicativo TODO usando Tailwind CSS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tailwindcss -i ./src/css/input.css -o ./src/css/output.css --minify",
+    "dev": "tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
     "tailwindcss": "^3.4.17"
   }
