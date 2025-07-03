@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .borda {
+        @apply border rounded-3xl border-gray-300 p-10 m-10 w-11/12 h-auto;
+    }
+
+    .item-main {
+        @apply text-xl text-white border border-white/30 m-3 p-4;
+        @apply w-full max-w-lg flex items-start gap-2;
+    }
+
+    .check-box {
+        @apply m-2 border rounded-full;
+        @apply flex-shrink-0; /* Garante que o checkbox não encolha */
+    }
+
+    .checked-line {
+        @apply line-through text-gray-400;
+    }
+
+    .lista {
+        @apply flex flex-col items-center gap-2 m-3;
+        @apply w-full max-w-xl;
+    }
+
+    .botao {
+        @apply bg-white border rounded-lg mob:p-1 mob:m-1 mMob:p-2;
+        @apply mob:text-xs mMob:text-xl tablet:text-2xl ;
+    }
+
+}
