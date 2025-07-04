@@ -5,12 +5,13 @@
 
 @layer components {
     .borda {
-        @apply border rounded-3xl border-gray-300 p-10 m-10 w-11/12 h-auto;
+        @apply border rounded-3xl border-gray-300 p-10 m-10 w-11/12 h-auto desktop:w-main;
+        
     }
 
     .item-main {
         @apply text-xl text-white border border-white/30 m-3 p-4;
-        @apply w-full max-w-lg flex items-start gap-2;
+        @apply w-full max-w-lg flex items-start gap-2 desktop:text-4xl ;
     }
 
     .check-box {

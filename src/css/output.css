@@ -565,6 +565,12 @@ video {
   padding: 2.5rem;
 }
 
+@media (min-width: 1440px) {
+  .borda {
+    width: 35.20rem;
+  }
+}
+
 .item-main {
   margin: 0.75rem;
   border-width: 1px;
@@ -579,6 +585,13 @@ video {
   max-width: 32rem;
   align-items: flex-start;
   gap: 0.5rem;
+}
+
+@media (min-width: 1440px) {
+  .item-main {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
 }
 
 .check-box {
@@ -667,14 +680,6 @@ video {
   display: flex;
 }
 
-.max-h-full {
-  max-height: 100%;
-}
-
-.max-h-screen {
-  max-height: 100vh;
-}
-
 .min-h-screen {
   min-height: 100vh;
 }
@@ -704,29 +709,13 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
 }
 
-.bg-emerald-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(5 150 105 / var(--tw-bg-opacity, 1));
-}
-
 .bg-gray-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1));
 }
 
-.bg-emerald-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(6 95 70 / var(--tw-bg-opacity, 1));
-}
-
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
-}
-
-.from-emerald-500 {
-  --tw-gradient-from: #10b981 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(16 185 129 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .from-emerald-600 {
@@ -798,14 +787,6 @@ video {
     width: 60%;
   }
 
-  .tablet\:w-6 {
-    width: 1.5rem;
-  }
-
-  .tablet\:w-40 {
-    width: 10rem;
-  }
-
   .tablet\:w-96 {
     width: 24rem;
   }
@@ -814,18 +795,26 @@ video {
     justify-content: center;
   }
 
-  .tablet\:text-8xl {
-    font-size: 6rem;
-    line-height: 1;
+  .tablet\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .tablet\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
   }
+}
 
-  .tablet\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+@media (min-width: 1440px) {
+  .desktop\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 2560px) {
+  .\34k\:w-main {
+    width: 35.20rem;
   }
 }

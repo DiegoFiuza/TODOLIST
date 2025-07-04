@@ -13,7 +13,7 @@ botao.addEventListener('click',function(){
     const check = document.createElement('input');
     //altero o tipo do input para ckeckbox
     remove.classList.add('block' ,'mx-auto')
-    remove.textContent = '🗙';
+    remove.textContent = '❌';
     check.type = 'checkbox';
     check.classList.add('check-box')
     elemento.appendChild(check)
